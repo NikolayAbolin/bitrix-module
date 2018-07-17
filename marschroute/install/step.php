@@ -14,7 +14,7 @@ else {
     // Собираем данные
     // Список сайтов
     $arSites = array();
-    $resSitesList = CSite::GetList();
+    $resSitesList = CSite::GetList($by = 'sort', $order = 'asc');    
     while ( $arSite = $resSitesList->Fetch() ) {
         $arSites[$arSite['LID']] = $arSite;
     }

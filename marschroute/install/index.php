@@ -280,7 +280,7 @@ class marschroute extends CModule
                 // Загрузим логотип
                 $arFile = CFile::MakeFileArray($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/marschroute/install/images/m_logo_500.png");
                 $arFile['MODULE_ID'] = 'marschroute';
-                $iFileID = CFile::SaveFile($arFile);
+                $iFileID = CFile::SaveFile($arFile,'marschroute');
 
                 $arDelivery = array(
                     'CODE'                  => 'MARSCHROUTE',
